@@ -403,6 +403,7 @@ svg .icon {
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
+    gap: 24px;
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -466,7 +467,8 @@ svg .icon-social-links {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(10%);
 }
 
 .portfolio-item:hover {
@@ -476,7 +478,10 @@ svg .icon-social-links {
      0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
-
+.portfolio-item:hover .app-text {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .portfolio-item img {
     width: 360px;
@@ -597,6 +602,13 @@ transform: translateY(0%);
 .icons-social-links {
     display: flex;
     gap: 16px;
+    justify-content: center;
+        align-items: center;
+        padding: 0;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+            
 }
     
 
@@ -633,6 +645,7 @@ transform: translateY(0%);
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
    } 
 
