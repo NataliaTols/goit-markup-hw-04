@@ -380,7 +380,7 @@ svg .icon {
     display: block;
 }
 
-.icons-social-links {
+.icons-social-links-team {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -599,7 +599,7 @@ transform: translateY(0%);
     padding-right: 300px;
 }
 
-.icons-social-links {
+.icons-social-links-footer {
     display: flex;
     gap: 16px;
     justify-content: center;
