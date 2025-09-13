@@ -74,30 +74,32 @@ a {
         text-transform: uppercase;
         letter-spacing: 0.03em;
         margin-right: 76px;
+        display: inline-block;
+        padding-bottom: 24px;
+        padding-top: 24px;
+        padding-right: 0;
+        padding-left: 0;
    
 }
-.logo-text, .logo-black{
+.logo-black{
     display: inline-block;
     padding-bottom: 24px;
     padding-top: 24px;
     padding-right: 0;
     padding-left: 0;
+    color: #2E2F42;
 }
-.logo-black {
-        color: #2E2F42;
-}
+
 
 
 .page-nav {
     list-style: none;
     display: flex;
-    gap: 40px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
     margin: 0;
-    margin-left: 76px; 
 }
 .nav-block .link {
         font-weight: 500;
@@ -164,6 +166,7 @@ a {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section {
+    margin: 0 auto;
     background-color: #2E2F42;
     padding: 188px 0;
     text-align: center;
@@ -243,8 +246,6 @@ a {
     display: flex;
     gap: 24px;
     justify-content: space-between;
-    margin-top: 120px;
-    margin-bottom: 120px;
 }
 
 .services-title {
@@ -263,17 +264,7 @@ a {
     align-items: flex-start;
 }
 
-.services-list .icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 15px;
-    fill: #2e2f42;
-    color: #4a4aef;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .services-list .icon-wrapper {
     width: 264px;
@@ -318,7 +309,6 @@ svg .icon {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .team-list-container {
@@ -326,8 +316,6 @@ svg .icon {
     gap: 24px;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 72px;
-    padding-bottom: 120px;
     margin: 0;
     
 }
@@ -353,7 +341,6 @@ svg .icon {
 .team-member-role {
     text-align: center;
     width: 100%;
-    margin-top: 16px;
 }
 
 .team-member-container {
@@ -363,11 +350,9 @@ svg .icon {
     background-color: #FFFFFF;
     color: #2E2F42;
     width: 264px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -388,7 +373,6 @@ svg .icon {
     gap: 24px;
     list-style: none;
     margin: 0;
-    padding: 0 16px;
 
 }
 .icons-social-links li {
@@ -443,7 +427,6 @@ svg .icon-social-links {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .portfolio-list-container {
@@ -451,8 +434,6 @@ svg .icon-social-links {
     gap: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
-    padding-top: 72px;
-    padding-bottom: 120px;
 }
 .portfolio-item-container {
     padding: 32px 16px;
@@ -463,12 +444,11 @@ svg .icon-social-links {
     background-color: #FFFFFF;
     border-radius: 4px;
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(10%);
+    
 }
 
 .portfolio-item:hover {
@@ -543,14 +523,10 @@ transform: translateY(0%);
 }
 
 .footer-container {
-    padding-left: 156px;
-    padding-right: 156px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    gap: 16px;
-    text-align: left;
+
 }
 
 .logo-footer {  
@@ -591,12 +567,9 @@ transform: translateY(0%);
 }
 
 .footer-media {
-    display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-    position: static;
-    padding-right: 300px;
 }
 
 .icons-social-links-footer {
